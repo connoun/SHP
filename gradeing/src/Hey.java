@@ -1,7 +1,7 @@
 
 public class Hey {
 	public static void main(String[] args) {
-		String bae = "Angela You";
-		System.out.println("Best gf in the world: " + bae);
+		String babby = "Kevin Li";
+		System.out.println("Best bf everrrrr: " + babby);
 	}
 }
