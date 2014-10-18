@@ -26,7 +26,7 @@ public class Grades
     	}
     	System.out.println(" ");
     	System.out.println("Your total is " + n);
-    	System.out.println("Your average is " + n/g);
+    	System.out.println("Your average is " + (double)n/g);
 
     		}
     	}
