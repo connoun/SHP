@@ -11,20 +11,19 @@ public class Grades
     	System.out.println(g + " is a fine number.");
     	
     	int[]a = new int[g];
+    	int n=0;
     	
-    	
-    	for (int i = 0;i<a.length;i++){
-    		System.out.println("What is your grade?");
-    		int gr = s.nextInt(); a[i]=gr; 
-    		if (g<i){
-    			int d = 0 + a[i];
-        		System.out.println(d);
-
+    	for (int i=0;i<a.length;i++){
+    		int j=s.nextInt();
+    		a[i]=j;
+    		n=n+j;   		
+    		System.out.println(n);
     	}
+   
     
 
     		}
     	}
 
-    }
+    
 
