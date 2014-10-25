@@ -25,15 +25,15 @@ public class GuessingGame
         int guess = scan.nextInt();
 
         // keep looping until guess == value
-
-        	for(int i=0; i<5; i++)
+        	int numbertry = (int)(Math.log(value)/Math.log(2));
+        	for(int i=0; i<numbertry; i++)
         	{
         			
                 if (guess == value) {
                 	System.out.println("Wow, correct!");
                 	break;
                 }
-                if (i==4){
+                if (i==numbertry-1){
                 	System.out.println("You lost, you nerd. The number was " + value);
                 	
                 }
