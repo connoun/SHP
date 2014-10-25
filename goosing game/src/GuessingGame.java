@@ -3,7 +3,7 @@ import java.util.Random;
 
 /**
  * The computer generates a random number. We try to guess it. The computer
- * tells us if it's too hi/low.  We keep going until they get it right.
+ * tells us if it's too high/low.  We keep going until they get it right.
  */
 public class GuessingGame
 {
@@ -26,17 +26,23 @@ public class GuessingGame
 
         // keep looping until guess == value
 
-        	for(int i=0; i<5; i++){
+        	for(int i=0; i<5; i++)
+        	{
+        			
                 if (guess == value) {
                 	System.out.println("Wow, correct!");
                 	break;
                 }
+                if (i==4){
+                	System.out.println("You lost, you nerd. The number was " + value);
+                	
+                }
                 else {
         	{
-        		{
+        		
         			// too high
         			if (guess > value)
-        			{
+        			{ 
         				System.out.println("Nope, too high.");
         			}
         			if (guess < value)
@@ -47,14 +53,15 @@ public class GuessingGame
         			// ask the user to guess again
         			System.out.print("Guess again: ");
         			guess = scan.nextInt();
+        	
+
+        		
+            }
         	}
-
-
 }
         
         	
         }
-                System.out.println("You lost, you nerd. The number was " + value);
-                }}
+                
     }
 
