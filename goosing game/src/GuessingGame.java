@@ -25,7 +25,7 @@ public class GuessingGame
         int guess = scan.nextInt();
 
         // keep looping until guess == value
-        	int numbertry = (int)(Math.log(value)/Math.log(2));
+        	int numbertry = (int)(Math.log(max)/Math.log(2))+1;
         	for(int i=0; i<numbertry; i++)
         	{
         			
