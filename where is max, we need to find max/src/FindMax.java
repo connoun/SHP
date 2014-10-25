@@ -8,12 +8,14 @@ public class FindMax
     	Scanner s = new Scanner(System.in);
     	int n = s.nextInt();
     	int[]a = new int[n];
+		int j = 0;
     	for (int i=0;i<a.length;i++){
-    		int j = 0;
+    		System.out.println("Next number?");
     		int scanin = s.nextInt();
-    		if(scanin>j)
-    			{j=scanin;}
-    			System.out.println(j);
+    		if(scanin>j){
+    			j=scanin;
+    			}
+    		System.out.println(j);
     		}
     	}
     }
