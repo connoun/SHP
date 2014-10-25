@@ -9,19 +9,11 @@ public class FindMax
     	int n = s.nextInt();
     	int[]a = new int[n];
     	for (int i=0;i<a.length;i++){
-    		if (i==0){
-    			System.out.println("Gibe number pls");
-    			int j = s.nextInt();
-    			a[i]=j;
-    			}
-    		else {
-    			System.out.println("Gibe number pls");
-    			int j = s.nextInt();
-    			a[i]=j;
-    			if (a[i]>a[i-1]){
-    				System.out.println("Wow max noomber");
-    			}
-    			}
+    		int j = 0;
+    		int scanin = s.nextInt();
+    		if(scanin>j)
+    			{j=scanin;}
+    			System.out.println(j);
     		}
     	}
     }
