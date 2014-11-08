@@ -29,24 +29,30 @@ public class dicejacking {
 				if (n>21) {
 					System.out.println("BUST! Dealer wins!");
 					break;
-				}
+				}}
 			int[]b = new int[22];
 			int m = 0;
 			for (int h = 0; h<b.length;h++){
 				if (m>17) {
 					System.out.println("The dealer has chosen to hold.");
-					System.out.println(m);}
+					System.out.println(m);
+					break;}
 				else {
 				int pipsism = die.nextInt(6)+1;
 				b[h] = pipsism;
 				m = m+pipsism;
-
 				}
 			}
+			if (m>n){
+				System.out.println("Dealer won.");
 			}
+			else {
+				System.out.println("Player won.");
+			}
+		}
 				
-				}
-		
 	}
+		
+	
 }
 
