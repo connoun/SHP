@@ -30,7 +30,9 @@ public class dicejacking {
 					System.out.println("BUST! Dealer wins!");
 					break;
 				}
-			int[]
+			int[]b = new int[22];
+			int m = 0;
+					
 			}
 				
 				}
