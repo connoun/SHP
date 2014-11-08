@@ -18,7 +18,7 @@ public class dicejacking {
 				System.out.println("Press 0 to stop rolling, anything else to continue.");
 				int roll = s.nextInt();
 				if (roll!=0){
-					int pips = die.nextInt(5) + 1;
+					int pips = die.nextInt(6) + 1;
 					a[i] = pips;
 					n = n + pips;
 					System.out.println(n);}
@@ -32,7 +32,17 @@ public class dicejacking {
 				}
 			int[]b = new int[22];
 			int m = 0;
-					
+			for (int h = 0; h<b.length;h++){
+				if (m>17) {
+					System.out.println("The dealer has chosen to hold.");
+					System.out.println(m);}
+				else {
+				int pipsism = die.nextInt(6)+1;
+				b[h] = pipsism;
+				m = m+pipsism;
+
+				}
+			}
 			}
 				
 				}
