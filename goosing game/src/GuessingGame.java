@@ -10,7 +10,8 @@ public class GuessingGame
     public static final void main(String[] args)
     {
         // ask the user for the maximum number
-        System.out.print("What is the maximum value? ");
+        System.out.println("What is the maximum value?");
+        System.out.println("Note that the higher you set this, the more guesses you will get. ");
         Scanner scan = new Scanner(System.in);
        
         // read the max value
@@ -21,11 +22,13 @@ public class GuessingGame
         int value = rand.nextInt(max + 1);
 
         // ask the user to guess what the number is
-        System.out.print("Guess what the number is: ");
-        int guess = scan.nextInt();
+
 
         // keep looping until guess == value
         	int numbertry = (int)(Math.log(max)/Math.log(2))+1;
+        	System.out.println("You have " + numbertry + " tries.");
+            System.out.println("Guess what the number is: ");
+            int guess = scan.nextInt();
         	for(int i=0; i<numbertry; i++)
         	{
         			
