@@ -53,7 +53,12 @@ public class dicejacking {
 				System.out.println("Dealer won.");
 				}
 				else {
-				System.out.println("Player won.");
+					if (m==n){
+						System.out.println("Tie!");
+					}
+					else{
+						System.out.println("Player won.");
+					}
 				}
 			}
 		}
