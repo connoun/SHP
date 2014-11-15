@@ -12,14 +12,12 @@ public class dicejacking {
 				return;}
 		else {
 			Random die = new Random();
-			int[]a = new int[22];
 			int n = 0;
-			for (int i = 0; i<a.length;i++){
+			for (int i = 0; i<22;i++){
 				System.out.println("Press 0 to stop rolling, anything else to continue.");
 				int roll = s.nextInt();
 				if (roll!=0){
 					int pips = die.nextInt(6) + 1;
-					a[i] = pips;
 					n = n + pips;
 					System.out.println(n);}
 				else {
@@ -30,24 +28,33 @@ public class dicejacking {
 					System.out.println("BUST! Dealer wins!");
 					break;
 				}}
-			int[]b = new int[22];
 			int m = 0;
-			for (int h = 0; h<b.length;h++){
-				if (m>17) {
-					System.out.println("The dealer has chosen to hold.");
-					System.out.println(m);
-					break;}
-				else {
-				int pipsism = die.nextInt(6)+1;
-				b[h] = pipsism;
-				m = m+pipsism;
+			for (int h = 0; h<22; h++){
+				if (n>21){
+					break;
 				}
+				else {
+					if (m>17) {
+						System.out.println("The dealer has chosen to hold at " + m + ".");
+						break;}
+					else {
+					int pipsism = die.nextInt(6)+1;
+					m = m+pipsism;
+					System.out.println("Rolling...");
+					}
+				}
+				
 			}
-			if (m>n){
-				System.out.println("Dealer won.");
+			if (n>21) {
+				
 			}
 			else {
+				if (m>n){
+				System.out.println("Dealer won.");
+				}
+				else {
 				System.out.println("Player won.");
+				}
 			}
 		}
 				
